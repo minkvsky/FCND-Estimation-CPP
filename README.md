@@ -45,9 +45,7 @@ use `FromEuler123_RPY` and `IntegrateBodyRate` to collect all information about 
 
 In the screenshot above the attitude estimation using linear scheme (left) and using the improved nonlinear scheme (right). Note that Y axis on error is much greater on left.
 
-***Success criteria:*** *Your attitude estimator needs to get within 0.1 rad for each of the Euler angles for at least 3 seconds.*
 
-**Hint: see section 7.1.2 of [Estimation for Quadrotors](https://www.overleaf.com/read/vymfngphcccj) for a refresher on a good non-linear complimentary filter for attitude using quaternions.**
 
 
 ### Step 3: Prediction Step ###
@@ -67,11 +65,7 @@ In this next step you will be implementing the prediction step of your filter.
 
 ![](images/09_PredictionCov.png)
 
-**Hint: see section 7.2 of [Estimation for Quadrotors](https://www.overleaf.com/read/vymfngphcccj) for a refresher on the the transition model and the partial derivatives you may need**
 
-**Hint: When it comes to writing the function for GetRbgPrime, make sure to triple check you've set all the correct parts of the matrix.**
-
-**Hint: recall that the control input is the acceleration!**
 
 
 ### Step 4: Magnetometer Update ###
