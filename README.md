@@ -89,13 +89,6 @@ Up until now we've only used the accelerometer and gyro for our state estimation
 ![](images/10_MagUpdate.png)
 
 
-***Success criteria:*** *Your goal is to both have an estimated standard deviation that accurately captures the error and maintain an error of less than 0.1rad in heading for at least 10 seconds of the simulation.*
-
-**Hint: after implementing the magnetometer update, you may have to once again tune the parameter `QYawStd` to better balance between the long term drift and short-time noise from the magnetometer.**
-
-**Hint: see section 7.3.2 of [Estimation for Quadrotors](https://www.overleaf.com/read/vymfngphcccj) for a refresher on the magnetometer update.**
-
-
 ### Step 5: Closed Loop + GPS Update ###
 
 - Tune the parameter in `11_GPSUpdate.txt`
@@ -114,18 +107,8 @@ Quad.UseIdealEstimator = 0
 
 
 
-***Success criteria:*** *Your objective is to complete the entire simulation cycle with estimated position error of < 1m.*
-
-**Hint: see section 7.3.1 of [Estimation for Quadrotors](https://www.overleaf.com/read/vymfngphcccj) for a refresher on the GPS update.**
-
-At this point, congratulations on having a working estimator!
-
 ### Step 6: Adding Your Controller ###
 
 - the picture of result:
 
 ![](images/step6.png)
-
-**Hint: you may find it easiest to do your de-tuning as a 2 step process by reverting to ideal sensors and de-tuning under those conditions first.**
-
-***Success criteria:*** *Your objective is to complete the entire simulation cycle with estimated position error of < 1m.*
