@@ -62,6 +62,9 @@ In this next step you will be implementing the prediction step of your filter.
 
 - implement the code in the function [`GetRbgPrime()`](src/QuadEstimatorEKF.cpp#184-233)
 - implement the code in the function [`Predict()`](src/QuadEstimatorEKF.cpp#L145-L182)
+- Tune the parameter `QVelXYStd` (`QuadEstimatorEKF.txt`)
+`QVelXYStd = .3`
+- the picture of result:
 
 ![](images/09_PredictionCov.png)
 
